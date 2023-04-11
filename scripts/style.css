@@ -1,0 +1,46 @@
+#main{
+    background-color: rgb(229, 242, 253);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#h1 {
+    display: flex;
+    justify-content: center;
+    font-size: larger;
+    font-weight: bolder;
+    border-style:ridge;
+}
+#questiontitle {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    border-bottom: 8px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: ridge;
+}
+#answers {
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    /* margin: 25px; */
+    height: 500px;
+    color: black;
+    background-color:aliceblue;
+    border-style: ridge;
+    overflow-wrap: normal;
+    cursor: pointer;
+}
+#aboutme {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 200px;
+}
+#start {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    margin-left: 160px;
+}

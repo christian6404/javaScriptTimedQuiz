@@ -432,8 +432,8 @@ console.log(count)
 var count = sessionStorage.getItem('score');
 console.log(count)
 
-function toHighScores() {
-    var displayScore = document.getElementById('highScoreUpdate');
-    displayScore.textContent = count;
-    console.log(displayScore.textContent)
-} toHighScores();
+// function toHighScores() {
+//     var displayScore = document.getElementById('highScoreUpdate');
+//     displayScore.textContent = count;
+//     console.log(displayScore.textContent)
+// } toHighScores();

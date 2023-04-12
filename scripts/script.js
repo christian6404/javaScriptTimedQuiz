@@ -4,7 +4,6 @@
 // create a leaderboard for the fastest time to asnwer the quiz
 // listen event for individual answers based on a, b, c, or d respectivly
 
-
 var questions = { // array for questions and answers
     question1: 'What does the word the word "this" refer to in javaScript?',
     wrongA1Q1: 'The local scope',
@@ -29,10 +28,15 @@ var questions = { // array for questions and answers
     question5: 'What does a object refer to in javaScript?',
     wrongA1Q5: 'A string',
     wrongA2Q5: 'A array of numeric characters',
-    rightAQ5: 'A array with key value pairs',
+    rightAQ5: 'A array with key value',
     wrongA3Q5: 'A array of multiple strings'
 
 };
+
+
+
+
+
 
 // declaring the variables in the global scope to be used later in the function
 var listquestions;
@@ -426,14 +430,23 @@ if (window.location.href.includes("index.html")) { // entire Q&A page is in a co
     };
 };
 
-var displayTimeLeft = document.getElementById('timedScoreUpdate')
-console.log(count)
 
-var count = sessionStorage.getItem('score');
-console.log(count)
-
-// function toHighScores() {
-//     var displayScore = document.getElementById('highScoreUpdate');
-//     displayScore.textContent = count;
-//     console.log(displayScore.textContent)
-// } toHighScores();
+if (window.location.href === "./index2.html") {
+    var restartBtn = document.getElementById('restartGame');
+  
+    restartBtn.addEventListener('click', function() {
+      window.location.href = './index.html';
+      return;
+    });
+  
+    var displayTimeLeft = document.getElementById('timedScoreUpdate');
+    var count = sessionStorage.getItem('score');
+  
+    function toHighScores() {
+      var displayScore = document.getElementById('highScoreUpdate');
+      displayScore.textContent = count;
+      console.log(displayScore.textContent);
+    }
+    
+    toHighScores();
+  }

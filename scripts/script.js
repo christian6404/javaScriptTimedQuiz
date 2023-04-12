@@ -426,16 +426,6 @@ if (window.location.href.includes("index.html")) { // entire Q&A page is in a co
     };
 };
 
-
-
-// var restartBtn = document.getElementById('restartGame');
-
-// restartBtn.addEventListener('click', function() {
-//   window.location.href = './index.html';
-//   return;
-// });
-
-
 var displayTimeLeft = document.getElementById('timedScoreUpdate')
 console.log(count)
 

@@ -50,7 +50,7 @@ var timerDisplay;
 var time;
 var restartBtn;
 
-if (window.location.href.includes("index.html")) { // entire Q&A page is in a conditinal statement to only display if the user is interacting the the index.html
+if (window.location.href.includes('https://christian6404.github.io/javaScriptTimedQuiz/')) { // entire Q&A page is in a conditinal statement to only display if the user is interacting the the index.html
     var listquestions = document.getElementById('question');
     var lista1 = document.getElementById('1');
     var lista2 = document.getElementById('2');
@@ -431,11 +431,11 @@ if (window.location.href.includes("index.html")) { // entire Q&A page is in a co
 };
 
 
-if (window.location.href === "./index2.html") {
+if (window.location.href === "https://christian6404.github.io/javaScriptTimedQuiz/index2.html") {
     var restartBtn = document.getElementById('restartGame');
   
     restartBtn.addEventListener('click', function() {
-      window.location.href = './index.html';
+      window.location.href = 'https://christian6404.github.io/javaScriptTimedQuiz/';
       return;
     });
   

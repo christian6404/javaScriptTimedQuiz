@@ -68,10 +68,10 @@ if (window.location.href.includes("index.html")) { // entire Q&A page is in a co
         document.getElementById('questiontitle').style.visibility = 'hidden';
         document.getElementById('timer').style.visibility = 'hidden';
     }
-    if (window.location.href.includes("index.html")) {
+    if (window.location.href === 'https://christian6404.github.io/javaScriptTimedQuiz/' || window.location.href.includes('index.html')) {
         hidestuff()
     }
-
+    console.log(window.location)
     button.addEventListener('click', function questionsAndAnswers1() { // listens for a event on the start button and runs the start of the quiz
 
         function updateTime() {
